@@ -1,0 +1,59 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+
+.h1,
+h1 {
+  font-size: 28px;
+}
+
+body {
+  font-family: 'Hind', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 17px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #dbe6eb;
+}
+
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+  background-color: #0c080c;
+}
+
+.navbar-nav li a:hover {
+  color: #1abc9c !important;
+}
+
+.footer-padding {
+  padding-bottom: 80px;
+}
+
+.footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #08090d;
+}
+
+.footer p {
+
+  margin-top: 15px;
+  font-size: 16px;
+  color: #fff;
+}
