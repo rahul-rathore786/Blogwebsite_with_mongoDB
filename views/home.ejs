@@ -2,21 +2,24 @@
 
   <h1>Home</h1>
   <p>
-    <!-- <%= startingContent %> -->
+
     Welcome to our daily blog website! Our blog aims to provide valuable insights and information to our readers on a
     variety of topics. We understand that in today's fast-paced world, it can be challenging to keep up with the latest
     news and trends, and that's where we come in.
   </p>
 
-  <p>Our team of expert writers and contributors is dedicated to bringing you daily content that is both informative and
-    engaging. We cover a wide range of topics, including current events, business, finance, health, lifestyle,
-    technology, and more. Our content is tailored to meet the needs and interests of our diverse readership.</p>
+
 
   <% posts.forEach(function(post){ %>
 
     <h1>
       <%=post.title%>
     </h1>
+
+    <h4>
+      By <%=post.name%>
+    </h4>
+
     <p>
       <%=post.content.substring(0, 50) + " ..." %>
         <a href="/posts/<%=post._id%>">Read More</a>
@@ -25,9 +28,11 @@
 
     <% }) %>
 
-      <p>Overall, our daily blog website is a valuable resource for anyone looking to stay informed and up-to-date on
+      <p>Overall, our daily blog website is a valuable resource for anyone looking to stay informed and up-to-date
+        on
         the latest news and trends. We are committed to providing our readers with high-quality content that is both
         informative and engaging. Thank you for visiting our website, and we look forward to serving you!</p>
 
+      <!-- <a href="/compose" class="btn btn-primary">Publish Blog</a> -->
 
       <%- include("partials/footer"); -%>
