@@ -206,7 +206,7 @@ app.post("/contactus", function (req, res) {
 
   newcontactForm.save(function (err) {
     if (!err) {
-      res.redirect("/");
+       res.redirect("/secret");
     }
   });
 
